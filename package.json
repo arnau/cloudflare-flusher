@@ -1,0 +1,8 @@
+{
+  "name": "flusher",
+  "version": "0.1.0",
+  "description": "Small utility to flush Cloud Flare's cache.",
+  "main": "main.js",
+  "author": "",
+  "license": "ISC"
+}

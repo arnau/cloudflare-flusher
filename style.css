@@ -1,0 +1,117 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    appearance: none;
+    background: none;
+    border: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    font-smoothing: antialiased;
+    font-weight: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    background: #f5f5f5;
+    color: #4d4d4d;
+    font-smoothing: antialiased;
+    font-weight: 300;
+    font: 14px Arial, sans-serif;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.app, .settings {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings > p.note {
+  padding: 0.8rem;
+}
+
+.settings > p.version {
+  background-color: transparent;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.settings > p {
+  margin: 0.8rem;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: #DDD;
+}
+
+.settings > p > label {
+  display: block;
+  padding: 1.6rem 0.8rem;
+  font-size: 1.5rem;
+  flex: 1;
+  background-color: LightGrey;
+}
+
+.settings > p > input {
+  display: block;
+  margin: 0.8rem;
+  font-size: 1.5rem;
+  flex: 3;
+}
+
+label[for="url"] {
+  flex: 1;
+  display: block;
+  margin: 0.8rem;
+  font-size: 1rem;
+}
+
+input#url {
+  flex: 1;
+  display: block;
+  margin: 0.8rem 0.8rem 0;
+  font-size: 1.5rem;
+}
+
+button.flushit {
+  border-radius: 0.8rem;
+  color: White;
+  display: block;
+  flex: 1;
+  font-size: 3rem;
+  margin: 1rem;
+  padding: 0.8rem;
+}
+
+button.ready {
+  background: linear-gradient(to top, DodgerBlue 0%,DeepSkyBlue 100%);
+}
+
+button.success {
+  background: linear-gradient(to top, Green 0%, LimeGreen 100%);
+}
+
+button.error {
+  background: linear-gradient(to top, Maroon 0%, Crimson 100%);
+}
+
+
+button.settings-trigger[aria-checked=True] path {
+  fill: red;
+}

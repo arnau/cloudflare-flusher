@@ -1,11 +1,11 @@
-flush-cache-gp:
-	@curl -XDELETE "https://api.cloudflare.com/client/v4/zones/9919c7373042e338d98389deb0111ba8/purge_cache" \
-        -H "Content-Type:application/json" \
-        -H "X-Auth-Email: arnau@greypistachio.com" \
-        -H "X-Auth-Key: $(CLOUDFLARE_TOKEN)" \
-        --data '{"files": ["https://www.greypistachio.com/blog"]}'
+compile:
+	elm-make Flusher.elm --output elm.js
 
+start:
+	electron .
 
 build:
-	elm-make Todo.elm --output elm.js
 	electron-packager ./ flusher --platform=darwin --arch=x64 --version=1.3.4
+
+clean:
+	rm -rf flusher-darwin-x64

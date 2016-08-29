@@ -1,6 +1,6 @@
 # Flusher
 
-Small utility to flush Greypistachio's cache at Cloud Flare.
+Small utility to flush Cloud Flare's cache for a given URL.
 
 
 ## Requirements

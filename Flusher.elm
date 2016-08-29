@@ -263,7 +263,7 @@ viewSettings model =
                   ] []
           ]
       , p [ class "note" ]
-          [ span [] [ text "This app lets you flush your Cloud Flare cache as you described in "
+          [ span [] [ text "This app lets you flush your Cloud Flare cache as described in "
                     , a [ href "https://api.cloudflare.com/#zone-purge-individual-files-by-url-and-cache-tags" ]
                         [ text "https://api.cloudflare.com/#zone-purge-individual-files-by-url-and-cache-tags" ]
                     ]

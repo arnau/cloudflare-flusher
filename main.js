@@ -12,15 +12,15 @@ app.on('ready', createWindow)
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    // width: 512,
-    // height: 300
-    width: 1024,
-    height: 768
+    width: 550,
+    height: 550
+    // width: 1024,
+    // height: 768
   })
 
   mainWindow.loadURL(`file://${__dirname}/index.html`)
 
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   mainWindow.on('closed', () => {
     mainWindow = null
